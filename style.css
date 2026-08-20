@@ -344,16 +344,20 @@
  	text-shadow: 1px 2px 2px #ffffff;
  }
  
- #Brochure{
-	 font-size:20px;
-     margin-left : 600px; 
-	 border : 5px solid green; 
-	 border-radius : 15px; 
-	 color : black; 
-	 font-weight: bold;
-	 background : yellow;
-   }
-
+#Brochure {
+    display: block;             /* Allows margin auto to work */
+    margin: 20px auto;          /* Centers horizontally & adds spacing top/bottom */
+    width: fit-content;         /* Keeps the button width wrapped tightly to the text */
+    text-align: center;         /* Ensures text alignment */
+    font-size: 20px;
+    border: 5px solid green;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    background: yellow;
+    text-decoration: none;      /* Removes default anchor link underline */
+    padding: 5px 15px;          /* Adds clean inner padding around text */
+} 
  @media (max-width:768px) {
   .navbar { display: block; }
   .menu { display: block; }
